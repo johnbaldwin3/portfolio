@@ -1,0 +1,235 @@
+
+// Bootstrap Variables
+$icon-font-path: '../../node_modules/materialize-css/dist/fonts/roboto/';
+
+// Import Materialize
+@import '../../node_modules/materialize-css/sass/materialize.scss';
+
+
+//variables
+
+//HSLA
+$color1h: hsla(195%, 46%, 5%, 1);
+$color2h: hsla(190%, 72%, 48%, 1);
+$color3h: hsla(194%, 35%, 60%, 1);
+$color4h: hsla(211%, 16%, 68%, 1);
+$color5h: hsla(220%, 5%, 88%, 1);
+
+/* RGB */
+$color1: rgba(7, 16, 19, 1);
+$color2: rgba(35, 181, 211, 1);
+$color3: rgba(117, 171, 188, 1);
+$color4: rgba(162, 174, 187, 1);
+$color5: rgba(223, 224, 226, 1);
+
+$color6: #3FA56A;
+
+$sans1: 'Martel Sans', sans-serif;
+$sans2: 'Muli', sans-serif;
+$serif1: 'Alegreya', serif;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+.navbar {
+  background-color: $color2;
+}
+
+#logo-jb3 {
+  margin-top: 10px;
+  height: 50px;
+}
+
+#logo-jb3-large {
+  max-height: 200px;
+}
+
+nav ul a,
+nav .brand-logo {
+  color: #fff;
+}
+
+nav .nav-wrapper {
+    position: relative;
+    height: 100%;
+}
+
+p {
+  line-height: 2rem;
+}
+
+.button-collapse {
+  color: #26a69a;
+}
+
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+
+  .parallax-container .section {
+    width: 100%;
+  }
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+}
+
+.name-header {
+  font-family: $sans1;
+
+}
+
+.developer {
+  font-family: $sans1;
+  font-size: 2.3rem;
+}
+
+.langs {
+  @extend .developer;
+  font-size: 1.28rem;
+}
+
+.para {
+  font-size: 18px;
+  font-family: $serif1;
+}
+
+.para1 {
+  @extend .para;
+
+}
+
+.about-header {
+  font-family: $sans1;
+  color: $color1;
+}
+
+#profile-pic {
+  border-radius: 15px;
+  margin-top: 40px;
+  //max-height: 200px;
+
+
+}
+
+#insta {
+  max-height: 60px;
+
+}
+
+#logo {
+  margin-top: 2.3rem;
+  background-color: rgba(11, 37, 45, 0.39);
+  color: white;
+  text-shadow: 0px 1px 0px $color1;
+}
+
+.github {
+  max-height: 62px;
+}
+.contact-info a {
+  display: block;
+  font-family: $serif1;
+  font-size: 20px;
+  min-height: 16px;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  padding: 0 0 0 30px;
+  margin: 0 0 10px;
+  color: $color1;
+}
+
+.contact {
+  text-decoration: none;
+  list-style: none;
+}
+
+.linked {
+  max-height: 60px;
+}
+
+.page-footer {
+  background-color: $color2;
+  .footer-copyright {
+    background-color: rgba(51, 51, 51, 0.27);
+  }
+}
+
+.logo-header {
+  max-height: 60px;
+}
+// .contact-info li.phone a {
+//   background-image: url('../images/phone.png');
+//   margin: 10px 0;
+// }
+//
+// .contact-info li.github a {
+//   background-image: url('../images/github5.png');
+//   margin: 10px 0;
+// }
+//
+// .contact-info li.mail a {
+//   background-image: url('../images/mail.png');
+// }
+//
+// .contact-info li.facebook a {
+//   background-image: url('../images/facebook.png');
+// }
+//
+// .contact-info li.twitter a {
+//   background-image: url('../images/twitter.png');
+// }
+
+.social-linkers {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+
+.medium {
+  max-height: 60px;
+}
+
+#construction {
+  margin: 18px 0;
+  border-radius: 15px;
+  max-height: 230px;
+}
+#index-banner {
+  min-height: 100vh;
+}
