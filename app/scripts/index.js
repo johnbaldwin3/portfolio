@@ -3,14 +3,20 @@ var Materialize = require('materialize-css');
 require('../../node_modules/materialize-css/js/sideNav.js');
 require('../../node_modules/materialize-css/js/parallax.js');
 require('../../node_modules/materialize-css/js/carousel.js');
-
+require('../../node_modules/materialize-css/js/cards.js');
+require('../../node_modules/materialize-css/js/collapsible.js');
+require('../../node_modules/materialize-css/js/modal.js');
 
 (function($){
   $(function(){
-
+    //  $('.carousel.carousel-slider').carousel({fullWidth: true});
     $('.button-collapse').sideNav();
     $('.parallax').parallax();
     $('.carousel').carousel();
+    //$('.cards').cards();
+    $('.collapsible').collapsible();
+    $('.modal').modal();
+    $('.modal-trigger').leanModal();
     // Next slide
     $('.carousel').carousel('next');
     $('.carousel').carousel('next', 3); // Move next n times.
