@@ -2,6 +2,7 @@
 // Bootstrap Variables
 $icon-font-path: '../../node_modules/materialize-css/dist/fonts/roboto/';
 
+
 // Import Materialize
 @import '../../node_modules/materialize-css/sass/materialize.scss';
 
@@ -143,7 +144,8 @@ footer.page-footer {
 #profile-pic {
   border-radius: 15px;
   margin-top: 40px;
-  //max-height: 200px;
+  //height: 300px;
+  width: 100%;
 
 
 }
@@ -195,6 +197,13 @@ footer.page-footer {
 }
 #resume-exp {
   background-color: $color4;
+}
+
+#contact-header {
+  text-shadow: 0px 1px 1px black;
+}
+#contacters {
+  @extend #resume-exp;
 }
 .collapsible-header {
   display: flex;
@@ -277,19 +286,24 @@ footer.page-footer {
   background-color: rgba(15, 54, 62, 0.61);;
   color: white;
 
+
 }
 
 #working-example1, #working-example2, #working-example3, #working-example4, #working-example5, #working-example6 {
   @extend #working-example;
 }
 
+#language-card {
+  background-color: rgba(35, 60, 72, 0.64);
+}
 
 .work-example {
   height: 200px;
-  //width: 300px;
+  //width: 100%;
+  overflow: hidden;
     img {
       min-height: 200px;
-      max-width: 100%;
+      //max-width: 100%;
       overflow: hidden;
     }
 }
@@ -302,4 +316,10 @@ footer.page-footer {
   top: 0;
   left: 0;
   background-color: rgba(35, 181, 211, .60);;
+}
+
+.devs {
+  font-size: 90px;
+  margin: 20px 20px;
+  color: white;
 }
