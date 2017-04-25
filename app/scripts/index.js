@@ -6,6 +6,7 @@ require('../../node_modules/materialize-css/js/carousel.js');
 require('../../node_modules/materialize-css/js/cards.js');
 require('../../node_modules/materialize-css/js/collapsible.js');
 require('../../node_modules/materialize-css/js/modal.js');
+require('../../node_modules/materialize-css/js/tooltip.js');
 
 (function($){
   $(function(){
@@ -13,10 +14,11 @@ require('../../node_modules/materialize-css/js/modal.js');
     $('.button-collapse').sideNav();
     $('.parallax').parallax();
     $('.carousel').carousel();
+    $('.tooltipped').tooltip();
     //$('.cards').cards();
     $('.collapsible').collapsible();
     $('.modal').modal();
-    $('.modal-trigger').leanModal();
+    //$('.modal-trigger').leanModal();
     // Next slide
     $('.carousel').carousel('next');
     $('.carousel').carousel('next', 3); // Move next n times.
