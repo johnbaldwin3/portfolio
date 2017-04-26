@@ -18,8 +18,10 @@ var slick = require('slick-carousel');
 
       infinite: true,
       speed: 300,
+      //fade: true,
       //centerPadding: '60px',
-      slidesToShow: 3,
+      slidesToShow: 1,
+      slideToScroll:1,
       centerMode: true,
       variableWidth: true,
       adaptiveHeight: true,

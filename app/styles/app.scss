@@ -329,15 +329,21 @@ footer.page-footer {
 
 .art {
   margin: 0 10px;
-  width: 300px;
-  height: 300px;
+  max-width: 500px;
+  max-height: 500px;
 }
 .art-pic{
   object-fit: contain;
   height: 100%;
   width: 100%;
 }
-
+.proj-links {
+  color: white;
+  //text-decoration: underline;
+}
+#gallery {
+  background: linear-gradient(to right, rgba(255,0,0,0),$color4, $color1,$color4, rgba(255,0,0,0) );
+}
 
 #language-sect {
   background-color: $color4;
