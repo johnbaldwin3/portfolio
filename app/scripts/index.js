@@ -6,13 +6,56 @@ require('../../node_modules/materialize-css/js/carousel.js');
 require('../../node_modules/materialize-css/js/cards.js');
 require('../../node_modules/materialize-css/js/collapsible.js');
 require('../../node_modules/materialize-css/js/modal.js');
+require('../../node_modules/materialize-css/js/materialbox.js');
 require('../../node_modules/materialize-css/js/tooltip.js');
+var slick = require('slick-carousel');
+//require('../../node_modules/slick-carousel/slick/slick.js');
 
 (function($){
   $(function(){
+
+    $('.slicked-car').slick({
+
+      infinite: true,
+      speed: 300,
+      //centerPadding: '60px',
+      slidesToShow: 3,
+      centerMode: true,
+      variableWidth: true,
+      adaptiveHeight: true,
+      settings: {
+      arrows: true,
+    },
+      // normal options...
+
+      // the magic
+      responsive: [{
+
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        infinite: true
+      }
+
+    }, {
+
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        //dots: true
+      }
+
+    }, {
+
+      breakpoint: 300,
+      settings: "unslick" // destroys slick
+
+    }]
+  });
     //  $('.carousel.carousel-slider').carousel({fullWidth: true});
     $('.button-collapse').sideNav();
     $('.parallax').parallax();
+    $('.materialbox').materialbox();
     $('.carousel').carousel();
     $('.tooltipped').tooltip();
     //$('.cards').cards();

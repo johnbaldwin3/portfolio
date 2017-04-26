@@ -6,6 +6,9 @@ $icon-font-path: '../../node_modules/materialize-css/dist/fonts/roboto/';
 // Import Materialize
 @import '../../node_modules/materialize-css/sass/materialize.scss';
 
+//import slick carousel
+@import '../../node_modules/slick-carousel/slick/slick.scss';
+
 
 //variables
 
@@ -43,6 +46,9 @@ img {
   background-color: $color2;
 }
 
+#gallery {
+  background-color: black;
+}
 #logo-jb3 {
   margin-top: 10px;
   height: 50px;
@@ -51,6 +57,7 @@ img {
 #logo-jb3-large {
   max-height: 200px;
 }
+
 
 nav ul a,
 nav .brand-logo {
@@ -230,27 +237,6 @@ footer.page-footer {
 .logo-header {
   max-height: 60px;
 }
-// .contact-info li.phone a {
-//   background-image: url('../images/phone.png');
-//   margin: 10px 0;
-// }
-//
-// .contact-info li.github a {
-//   background-image: url('../images/github5.png');
-//   margin: 10px 0;
-// }
-//
-// .contact-info li.mail a {
-//   background-image: url('../images/mail.png');
-// }
-//
-// .contact-info li.facebook a {
-//   background-image: url('../images/facebook.png');
-// }
-//
-// .contact-info li.twitter a {
-//   background-image: url('../images/twitter.png');
-// }
 
 .social-linkers {
   display: flex;
@@ -337,8 +323,19 @@ footer.page-footer {
   padding: 10px;
 }
 
-#mid-para1, #mid-para2, #mid-para3, #mid-para4 {
+#mid-para1, #mid-para2, #mid-para3, #mid-para4, #mid-para5 {
   @extend #mid-para;
+}
+
+.art {
+  margin: 0 10px;
+  width: 300px;
+  height: 300px;
+}
+.art-pic{
+  object-fit: contain;
+  height: 100%;
+  width: 100%;
 }
 
 
@@ -377,7 +374,11 @@ footer.page-footer {
 
 }
 
-
+.slick-arrow {
+  background-color: $color6;
+  border-radius: 5px;
+  color: white;
+}
 
 .devs:hover {
   color: $color2;
