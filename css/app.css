@@ -6954,7 +6954,7 @@ footer.page-footer {
   text-decoration: none;
   list-style: none; }
 
-.linked {
+.linked, .treehouse {
   max-height: 60px; }
 
 .page-footer {
