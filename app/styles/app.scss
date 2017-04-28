@@ -359,6 +359,15 @@ footer.page-footer {
     }
 }
 
+.contact {
+  font-family: $serif1;
+  font-size: 25px;
+
+  a {
+  color: white;
+  text-decoration: none;
+  }
+}
 .work-example:hover::after {
   position: absolute;
   content: '';
@@ -380,6 +389,9 @@ footer.page-footer {
 
 }
 
+.contact:hover {
+  text-shadow: 0px 1px 1px $color1;
+}
 .slick-arrow {
   background-color: $color6;
   border-radius: 5px;
