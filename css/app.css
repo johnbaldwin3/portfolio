@@ -7057,14 +7057,20 @@ footer.page-footer {
 
 .art {
   margin: 0 10px;
-  width: 300px;
-  height: 300px; }
+  max-width: 500px;
+  max-height: 500px; }
 
 .art-pic {
   -o-object-fit: contain;
      object-fit: contain;
   height: 100%;
   width: 100%; }
+
+.proj-links {
+  color: white; }
+
+#gallery {
+  background: linear-gradient(to right, rgba(255, 0, 0, 0), #a2aebb, #071013, #a2aebb, rgba(255, 0, 0, 0)); }
 
 #language-sect {
   background-color: #a2aebb; }
@@ -7075,6 +7081,13 @@ footer.page-footer {
   .work-example img {
     min-height: 200px;
     overflow: hidden; }
+
+.contact {
+  font-family: "Alegreya", serif;
+  font-size: 25px; }
+  .contact a {
+    color: white;
+    text-decoration: none; }
 
 .work-example:hover::after {
   position: absolute;
@@ -7091,6 +7104,9 @@ footer.page-footer {
   @media screen and (max-width: 728px) {
     .devs {
       font-size: 30px; } }
+
+.contact:hover {
+  text-shadow: 0px 1px 1px #071013; }
 
 .slick-arrow {
   background-color: #3FA56A;
